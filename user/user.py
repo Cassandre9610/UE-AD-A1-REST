@@ -14,7 +14,7 @@ with open('{}/databases/users.json'.format("."), "r") as jsf:
 def write(new_users):
    with open('{}/databases/users.json'.format("."), 'w') as f:
       full = {}
-      full['users']=users
+      full['users']=new_users
       json.dump(full, f)
 
 
