@@ -19,7 +19,7 @@ def write(new_users):
 
 
 def error_not_found(message: str):
-   return make_response(jsonify({"error":message}),500) # TODO 404 ?
+   return make_response(jsonify({"error":message}),404)
 
 
 @app.route("/", methods=['GET'])
